@@ -1,6 +1,6 @@
 .list {
   margin: 0;
-  width: 280px;
+  width: 320px;
   height: 140px;
 }
 
@@ -8,20 +8,9 @@
   display: flex;
   justify-content: space-between;
   margin-bottom: 10px;
+  align-items: baseline;
 }
 
 .contact:last-child {
   margin-bottom: 0;
-}
-
-.deleteButton {
-  margin-left: 20px;
-  width: 60px;
-  border-radius: 4px;
-}
-
-.deleteButton:hover {
-  background-color: burlywood;
-  border: solid 1px transparent;
-  cursor: pointer;
 }

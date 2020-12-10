@@ -1,0 +1,17 @@
+.iconButton {
+  margin: 0;
+  padding: 10px;
+  border: none;
+  border-radius: 50%;
+  font: inherit;
+  background-color: burlywood;
+  cursor: pointer;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.iconButton:hover {
+  fill: white;
+}

@@ -1,4 +1,6 @@
 import PropTypes from 'prop-types';
+import PhoneInput from 'react-phone-input-2';
+import 'react-phone-input-2/lib/style.css';
 import { Component } from 'react';
 import s from './Phonebook.module.css';
 
@@ -76,12 +78,20 @@ class Phonebook extends Component {
           </label>
           <label className={s.textInput}>
             Number
-            <input
+            {/* <input
               type="number"
               value={number}
               name="number"
               placeholder="4591256"
               onChange={this.handeleChange}
+              className={s.formInput_phone}
+            /> */}
+            <PhoneInput
+              country={'ua'}
+              value={number}
+              name="number"
+              placeholder="4591256"
+              onChange={number => this.setState({ number })}
               className={s.formInput_phone}
             />
           </label>

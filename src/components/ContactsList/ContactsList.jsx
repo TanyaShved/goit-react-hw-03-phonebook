@@ -1,4 +1,6 @@
 import PropTypes from 'prop-types';
+import IconButton from '../IconButton/IconButton';
+import { ReactComponent as DeleteIcon } from '../../icon/delete.svg';
 import s from './ContactsList.module.css';
 
 const ContactsList = ({ contacts, onDeleteContact }) => {
@@ -7,12 +9,12 @@ const ContactsList = ({ contacts, onDeleteContact }) => {
       {contacts.map(({ id, name, number }) => (
         <li key={id} className={s.contact}>
           {name}: {number}
-          <button
-            className={s.deleteButton}
+          <IconButton
             onClick={() => onDeleteContact(id)}
+            aria-label="Delete contact"
           >
-            Delete
-          </button>
+            <DeleteIcon width="20" height="20" fill="bleak" />
+          </IconButton>
         </li>
       ))}
     </ul>
