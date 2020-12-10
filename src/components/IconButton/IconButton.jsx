@@ -4,7 +4,7 @@ import s from './IconButton.module.css';
 const IconButton = ({ children, onClick, ...allyProps }) => (
   <button
     type="button"
-    className={s.iconButton}
+    className={s.IconButton}
     onClick={onClick}
     {...allyProps}
   >

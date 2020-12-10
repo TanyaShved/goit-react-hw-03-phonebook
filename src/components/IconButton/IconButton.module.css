@@ -1,10 +1,11 @@
-.iconButton {
+.IconButton {
   margin: 0;
   padding: 10px;
   border: none;
   border-radius: 50%;
   font: inherit;
   background-color: burlywood;
+  fill: black;
   cursor: pointer;
 
   display: inline-flex;
@@ -12,6 +13,6 @@
   justify-content: center;
 }
 
-.iconButton:hover {
+.IconButton:hover {
   fill: white;
 }
